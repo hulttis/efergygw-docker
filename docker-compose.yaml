@@ -1,0 +1,23 @@
+version: '3.7'
+
+# services
+services:
+# efergy gateway
+  efergygw:
+    container_name: efergygw
+    build: ./efergygw
+    restart: unless-stopped
+    hostname: efergygw
+    privileged: true
+    network_mode: "host"
+    volumes:
+      - efergygw-log:/var/log/efergygw
+
+# volumes
+volumes:
+  efergygw-log:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "/var/log/efergygw"
