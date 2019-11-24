@@ -1,4 +1,4 @@
-# EFERGYGW-DOCKER 1.1.1 (191124)
+# EFERGYGW-DOCKER 1.1.2 (191124)
 **Efergy InfluxDB / MQTT gateway ( python 3.8 ) Docker**
 
 See `https://github.com/hulttis/efergygw` for more inflrmation
@@ -11,7 +11,7 @@ See `https://github.com/hulttis/efergygw` for more inflrmation
  
 #### DOCKER-COMPOSE
 - create compose directory (`mkdir ~/compose && cd ~/compose`)
-- clone git repository (`git clone https://github.com/hulttis/efergygw-docker.git efergygw`)
+- clone git repository (`git clone --single-branch https://github.com/hulttis/efergygw-docker.git efergygw`)
 - copy docker-compose.yaml (`cp efergygw/docker-compose.yaml .`)
 - edit efergygw/efergygw.json (`nano efergygw/efergygw.json`)
 - create /var/log/efergygw directory (`sudo mkdir -p /var/log/efergygw`) for logs
