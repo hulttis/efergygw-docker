@@ -1,4 +1,4 @@
-# EFERGYGW-DOCKER 1.1.0 (191124)
+# EFERGYGW-DOCKER 1.1.1 (191124)
 **Efergy InfluxDB / MQTT gateway ( python 3.8 ) Docker**
 
 See `https://github.com/hulttis/efergygw` for more inflrmation
